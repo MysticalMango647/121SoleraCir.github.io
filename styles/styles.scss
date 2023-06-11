@@ -92,12 +92,40 @@ margin: 1rem;
 }
 
 .container-PhotoGallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 1rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 1rem 0 1rem;
+    .heading{
+        width: 100%;
+        margin-bottom: 1rem;
+        h2{
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+            span{
+                font-weight: 100;
+            }
+        }
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .dreamhouseimg{
+            display: flex;
+            flex-direction: column;
+            width:  33.3%;
+            img{
+                width: 100%;
+                padding: .4rem;
+                border-radius: 1rem;
+            }
+        }
+    }
 }
 
 .gmap{
