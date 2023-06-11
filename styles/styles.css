@@ -73,30 +73,21 @@ body {
 }
 
 .intro {
-  padding-top: 0.3rem;
   background-color: #000;
+  padding: 0.4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin: 1rem;
 }
 .intro .intro-pic {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 50%;
-  height: auto;
-  position: relative;
 }
 .intro .intro-pic img {
   max-width: 100%; /* Set the max-width to 100% */
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
   transition: var(--transition-1);
-  filter: grayscale(100%);
 }
 
 .container-PhotoGallery {

@@ -67,26 +67,19 @@ body{
     }
 
 .intro {
-padding-top: 0.3rem;
-background-color: #000;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-align-items: center;
-margin: 1rem;
+    background-color: #000;
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; 
+    margin: 1rem;
     .intro-pic {
-        display: flex;
+        justify-content: center;
         align-items: center;
-        position: relative;
-        object-fit: cover;
         width: 50%;
-        height: auto;
-        position: relative;
         img {
         max-width: 100%; /* Set the max-width to 100% */
-        height: auto;
-        object-fit: cover;
         transition: var(--transition-1);
-        filter: grayscale(100%);
         }
     }
 }
