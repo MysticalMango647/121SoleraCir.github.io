@@ -4,6 +4,9 @@
     box-sizing: border-box;
     list-style: none;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 //--color-secondary: #27AE60; --color-primary: #191d2b;
 :root {
@@ -37,7 +40,6 @@ body{
     padding-top: .3rem;
     padding-bottom: .5rem;
     
-   
     .heading-tittle{
         position:sticky; 
         h1 {
@@ -147,10 +149,10 @@ body{
             }
         }
         .animated-gallery {
-            padding: 10 rem;
+            margin: 2rem;
             .carousel {
-                width: 100vw;
-                height: 100vh;
+                width: 95vw;
+                height: 95vh;
                 position: relative;
               }
               
@@ -170,6 +172,7 @@ body{
               
               .slide > img {
                 display: block;
+                position: center;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
