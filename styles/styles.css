@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #e4e4e4;
-  --color-secondary: #27AE60;
+  --color-secondary: #797e7b;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -27,7 +27,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .heading-sec {
@@ -72,25 +72,65 @@ body {
   background-color: #f8f8f8;
 }
 
-.intro {
+.container-intro {
   background-color: #000;
-  padding: 0.4rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 1rem;
 }
-.intro .intro-pic {
+.container-intro .intro-pic {
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.intro .intro-pic img {
+.container-intro .intro-pic img {
   max-width: 100%; /* Set the max-width to 100% */
-  transition: var(--transition-1);
+}
+.container-intro .intro-text {
+  display: flex;
+  flex-direction: column;
+}
+.container-intro .intro-text .intro-price {
+  font-size: 45px;
+  font-family: gilroy;
+  font-weight: 200px;
+  letter-spacing: 1px;
+}
+.container-intro .intro-text .intro-mini-detail {
+  border: #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  padding: 30px 20px;
+  color: #000;
+  box-shadow: -4px 6px 20px rgba(0, 0, 0, 0.1019607843);
+}
+.container-intro .intro-text .intro-mini-detail section {
+  padding: 1rem;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  flex: 1 1 0;
+  min-width: 150px;
+  max-width: 100%;
+  text-align: center;
+  padding: 18px 6px;
+}
+.container-intro .intro-text .intro-mini-detail section i {
+  font-size: 42px;
+  width: 50%;
+  height: 50%;
+  padding-bottom: 1rem;
+}
+.container-intro .intro-text .intro-mini-detail section:last-child {
+  border-right: 0;
 }
 
-.container-PhotoGallery {
+.container-photo-galary {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,35 +138,58 @@ body {
   text-align: center;
   margin: 2rem 1rem 0 1rem;
 }
-.container-PhotoGallery .heading {
+.container-photo-galary .photo-heading {
   width: 100%;
   margin-bottom: 1rem;
 }
-.container-PhotoGallery .heading h2 {
+.container-photo-galary .photo-heading h2 {
   font-size: 3em;
   font-weight: bolder;
   padding-bottom: 10px;
   border-bottom: 3px solid #222;
 }
-.container-PhotoGallery .heading h2 span {
+.container-photo-galary .photo-heading h2 span {
   font-weight: 100;
 }
-.container-PhotoGallery .box {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.container-PhotoGallery .box .dreamhouseimg {
+
+/*
+.container-PhotoGallery{
   display: flex;
   flex-direction: column;
-  width: 33.3%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 1rem 0 1rem;
+    .heading{
+        width: 100%;
+        margin-bottom: 1rem;
+        h2{
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+            span{
+                font-weight: 100;
+            }
+        }
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .dreamhouseimg{
+            display: flex;
+            flex-direction: column;
+            width:  33.3%;
+            img{
+                width: 100%;
+                padding: .4rem;
+                border-radius: 1rem;
+            }
+        }
+    }
 }
-.container-PhotoGallery .box .dreamhouseimg img {
-  width: 100%;
-  padding: 0.4rem;
-  border-radius: 1rem;
-}
-
-.gmap {
+*/
+.container-location {
   background-color: #ccc;
 }/*# sourceMappingURL=styles.css.map */
