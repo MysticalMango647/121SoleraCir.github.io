@@ -357,11 +357,6 @@ body {
   background-color: #ffffff;
   padding: 50px 40px;
 }
-.container-media .tab-content iframe {
-  position: center;
-  justify-content: center;
-  align-items: center;
-}
 .container-media .tab-content h4 {
   font-size: 28px;
   margin-bottom: 20px;
