@@ -156,23 +156,11 @@ body {
   box-sizing: border-box;
   display: block;
   padding-left: 2rem;
-  color: red;
 }
 .container-features .features-tag .ul {
   margin-top: 0;
   margin-bottom: 9.5px;
   padding: 0;
-  list-style: none;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
 }
 .container-features .features-tag .ul .li {
   display: inline-block;

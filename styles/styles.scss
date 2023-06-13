@@ -148,18 +148,12 @@ body{
     .features-tag {
         box-sizing: border-box;
         display: block;
-        padding-left: 2rem;
-        color:red;
+        padding-left: 2rem; 
         .ul {
             margin-top: 0;
             margin-bottom: 9.5px;
             padding: 0;
-            list-style: none;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
+
             .li {
                 display: inline-block;
                 padding: 15px;
