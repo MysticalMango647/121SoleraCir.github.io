@@ -357,6 +357,9 @@ body {
   background-color: #ffffff;
   padding: 50px 40px;
 }
+.container-media .tab-content iframe {
+  border-radius: var(--br-sm-2);
+}
 .container-media .tab-content h4 {
   font-size: 28px;
   margin-bottom: 20px;
