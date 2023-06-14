@@ -31,3 +31,4 @@ tabs.forEach((tab, index) => {
     tabs[index].classList.add("active");
   });
 });
+
