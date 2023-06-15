@@ -893,4 +893,57 @@ body {
   margin: auto;
   display: block;
   scale: 60%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 890px) {
+  .heading-sec {
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .heading-sec .heading-tittle h1 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .heading-sec .heading-tittle h1 num {
+    font-size: 60px;
+  }
+  .container-intro {
+    display: block;
+  }
+  .container-intro .intro-pic {
+    padding-top: 1rem;
+    width: 99%;
+    padding-bottom: 1rem;
+  }
+  .container-intro .intro-text {
+    padding-top: 3rem;
+    padding-right: 0rem;
+    padding: 0.1rem;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .container-intro .intro-text .intro-price {
+    font-size: 35px;
+    font-family: gilroy;
+    text-align: center;
+  }
+  .container-intro .intro-text .intro-mini-detail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-intro .intro-text .intro-mini-detail section {
+    min-width: 50%;
+  }
+  .container-intro .intro-text .intro-mini-detail section:nth-child(2) {
+    border-right: 0;
+  }
+  .container-intro .intro-text .intro-mini-detail section:nth-child(1) {
+    border-bottom: 1px solid #ddd;
+  }
+  .container-intro .intro-text .intro-mini-detail section:nth-child(1) section:nth-child(2) {
+    border-bottom: 1px solid #ddd;
+  }
+  .container-intro .intro-text .intro-mini-detail section:nth-child(2) {
+    border-bottom: 1px solid #ddd;
+  }
 }/*# sourceMappingURL=styles.css.map */

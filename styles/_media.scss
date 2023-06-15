@@ -1,0 +1,64 @@
+@media screen and (min-width:300px) and (max-width: 890px){
+    .heading-sec{
+        padding-top: .3rem;
+        padding-bottom: .5rem;
+        .heading-tittle{
+            h1{
+                font-size:45px;
+                font-weight:400;
+                num{
+                    font-size:60px ;
+                }
+            }
+        }
+    }
+
+    .container-intro {
+        //display: grid;
+        //grid-template-columns: repeat(2,1fr);
+        display: block;
+        .intro-pic {
+            padding-top: 1rem;
+            width:99%;
+            padding-bottom: 1rem;
+        }
+        .intro-text {
+            padding-top: 3rem;
+            padding-right: 0rem;
+            padding: .1rem;
+            text-align: justify;
+            font-size: 15px;
+            .intro-price {
+                font-size:35px;
+                font-family: gilroy; 
+                text-align: center;
+            }
+
+            .intro-mini-detail {
+                display: flex;
+                flex-wrap: wrap;
+                //flex-basis: 25%;
+                section{
+                    min-width: 50%;
+                }
+                section:nth-child(2){
+                    border-right: 0;
+                }
+                section:nth-child(1) {
+                    border-bottom: 1px solid #ddd;
+                }
+                section:nth-child(1) section:nth-child(2){
+                    border-bottom: 1px solid #ddd;
+                } 
+                section:nth-child(2){
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+
+
+
+    }
+    
+
+}
