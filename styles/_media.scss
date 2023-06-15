@@ -119,9 +119,44 @@
         .media-tab{
             width: 90%;
             .tab-content{
-                width: 95%;
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+            #view-3d {
+                
+            }
+            #floorplan{
+                .grid{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
             }
         }
     }
 
+    .container-location{
+        .location-heading{
+            h2{
+                padding-top:2rem;
+                font-size: 2em;
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .container-contact{
+        
+        .contact-heading{
+            h2{
+                font-size: 2em;
+                span{
+                    font-weight: 50;
+                }
+            }
+        }
+        
+    }
 }

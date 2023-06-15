@@ -395,7 +395,7 @@ body {
 }
 .container-media .media-tab .tab-content {
   background-color: #ffffff;
-  padding: 50px 40px;
+  padding: 10px 10px;
 }
 .container-media .media-tab .tab-content h1 {
   font-size: 28px;
@@ -885,6 +885,7 @@ body {
 }
 
 .container-footer {
+  position: static;
   display: flex;
   justify-content: center;
 }
@@ -995,6 +996,25 @@ body {
     width: 90%;
   }
   .container-media .media-tab .tab-content {
-    width: 95%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-media .media-tab #floorplan .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-location .location-heading h2 {
+    padding-top: 2rem;
+    font-size: 2em;
+  }
+  .container-location .location-heading h2 span {
+    font-size: 1rem;
+  }
+  .container-contact .contact-heading h2 {
+    font-size: 2em;
+  }
+  .container-contact .contact-heading h2 span {
+    font-weight: 50;
   }
 }/*# sourceMappingURL=styles.css.map */
