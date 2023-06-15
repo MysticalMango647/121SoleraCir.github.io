@@ -17,6 +17,7 @@ buttons.forEach(button => {
   })
 })
 
+/*
 let tabs = document.querySelectorAll(".tabs h3");
 let tabContents = document.querySelectorAll(".tab-content div");
 tabs.forEach((tab, index) => {
@@ -32,3 +33,52 @@ tabs.forEach((tab, index) => {
   });
 });
 
+*/
+
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lightbox = document.createElement('div');
+  lightbox.id = 'lightbox';
+  document.body.appendChild(lightbox);
+
+  console.log("lightbox created");
+
+  const images = document.querySelectorAll('.grid img');
+  console.log("number of images:", images.length);
+
+  images.forEach((image) => {
+    image.addEventListener('click', (e) => {
+      console.log("image clicked");
+      lightbox.classList.add('active');
+      const img = document.createElement('img');
+      img.src = e.target.src;
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild);
+      }
+      lightbox.appendChild(img);
+      console.log("lightbox image set");
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== e.currentTarget) return;
+    lightbox.classList.remove('active');
+    console.log("lightbox closed");
+  });
+});
