@@ -823,7 +823,7 @@ body{
                 line-height: 24px;
                 letter-spacing: -0.01em;
             
-                width: 400px;
+                width: 350px;
             
                 /* NORMAL */
                 --fc-border-color: #ECEFF9;
@@ -993,13 +993,15 @@ body{
 
 
 .container-footer{
-    position:static;
+    
     display: flex;
     justify-content: center;
+    align-items: center;
     img {
         width: 50%;
-        margin: auto;
-        display: block;
+        //margin: auto;
+        //display: block;
+        margin: 2rem;
         scale: 60%;
     }
 }

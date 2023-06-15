@@ -743,7 +743,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.01em;
-  width: 400px;
+  width: 350px;
   /* NORMAL */
   --fc-border-color: #ECEFF9;
   --fc-normal-text-color: #0E0B3D;
@@ -885,14 +885,13 @@ body {
 }
 
 .container-footer {
-  position: static;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container-footer img {
   width: 50%;
-  margin: auto;
-  display: block;
+  margin: 2rem;
   scale: 60%;
 }
 
@@ -1016,5 +1015,21 @@ body {
   }
   .container-contact .contact-heading h2 span {
     font-weight: 50;
+  }
+  .container-contact .contact-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-contact .contact-body .contact-userInfo-left-col {
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-contact .contact-body .contact-right-col {
+    align-items: center;
+    justify-content: center;
+  }
+  .container-footer img {
+    scale: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

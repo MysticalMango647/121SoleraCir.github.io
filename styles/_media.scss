@@ -148,7 +148,6 @@
     }
 
     .container-contact{
-        
         .contact-heading{
             h2{
                 font-size: 2em;
@@ -157,6 +156,24 @@
                 }
             }
         }
-        
+        .contact-body{
+            display: flex;
+            flex-wrap: wrap;
+            .contact-userInfo-left-col{
+                width: 95%;
+                align-items: center;
+                justify-content: center;
+            }
+            .contact-right-col{
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+    }
+    .container-footer{
+        img {
+            scale: 100%;
+        }
     }
 }
