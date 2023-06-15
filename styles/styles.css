@@ -920,12 +920,15 @@ body {
     padding-right: 0rem;
     padding: 0.1rem;
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
     font-size: 15px;
   }
   .container-intro .intro-text .intro-price {
     font-size: 35px;
     font-family: gilroy;
-    text-align: center;
+    text-align: center !important;
   }
   .container-intro .intro-text .intro-mini-detail {
     display: flex;
@@ -945,5 +948,53 @@ body {
   }
   .container-intro .intro-text .intro-mini-detail section:nth-child(2) {
     border-bottom: 1px solid #ddd;
+  }
+  .container-features {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container-features .features-tittle {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .container-features .features-tag ul {
+    margin: 0.7rem;
+    padding: 0;
+  }
+  .container-features .features-tag ul li {
+    padding: 5px;
+    font-size: 14px;
+    margin: 6px 9px 6px 0;
+  }
+  .container-photo-galary .photo-heading h2 {
+    font-size: 2em;
+  }
+  .container-photo-galary .photo-heading h2 span {
+    font-weight: 50;
+  }
+  .container-photo-galary .animated-gallery .carousel {
+    width: 95vw;
+    height: 35vh;
+  }
+  .container-photo-galary .animated-gallery .carousel-button {
+    font-size: 2rem;
+  }
+  .container-media .media-heading h2 {
+    font-size: 2em;
+  }
+  .container-media .media-heading h2 span {
+    font-weight: 50;
+  }
+  .container-media .media-tab {
+    width: 90%;
+  }
+  .container-media .media-tab .tab-content {
+    width: 95%;
   }
 }/*# sourceMappingURL=styles.css.map */
